@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/AnonymousPro-Regular.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #546fe4;
+$color-2: #212040;
+$color-3: rgb(100, 100, 100);
+$black: #060d2c;
+$white: rgb(238, 238, 238);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-1;
+}
+
+li {
+  list-style: none;
+}

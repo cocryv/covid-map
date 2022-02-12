@@ -1,0 +1,69 @@
+.sidebar{
+    height: 100vh;
+    width: auto;
+    border-right: 1px solid rgba(0,0,0,.1);
+    font-family: "Anonymous Pro",monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .sidebar__mainTab{
+
+        display: flex;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 50px 25px;
+        height: 100%;
+        width: 316px;
+        box-sizing: border-box;
+
+        .sidebar__info{
+            h1{
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+    
+            .totalCases{
+                margin-bottom: 20px;
+                span{
+                    font-size: 2em;
+                    font-weight: 700;
+                }
+                &--yellow{
+                    span{
+                        color: rgb(245, 157, 43);
+                    }
+                }
+                &--green{
+                    span{
+                        color: rgb(9, 216, 9);
+                    }
+                }
+                &--red{
+                    span{
+                        color: rgb(255, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .sidebar__country{
+            max-height: 100%;
+            border-top: 1px dotted;
+            border-bottom: 1px dotted;
+            overflow: scroll;
+            cursor: pointer;
+
+            .item{
+                display: flex;
+                justify-content: space-between;
+                box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid rgba(0,0,0,.05)
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "./settings";
+@import "./components/sidebar";
+@import "./components/map";
+@import "./components/country";
+@import "./App";
+
+.body{
+
+}
+.home-page{
+    display: flex;
+}
