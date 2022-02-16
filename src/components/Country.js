@@ -1,10 +1,11 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
-const Country = () => {
+const Country = (props) => {
     return (
         <div className="item">
-            <p>Russia</p>
-            <span>79100927</span>
+            <p>{props.name}</p>
+            <CountUp duration={1.25} className='cases' end={props.nbCases} />
         </div>
     );
 };
