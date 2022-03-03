@@ -10,7 +10,6 @@ const Map = () => {
 
     const styleAdjust = () => {
         const svgTag = document.querySelector('.map__svgContainer svg');
-        const titleTag = document.querySelector('title');
     
         svgTag.setAttribute('viewBox', '-140 486 3230 523');
       };
@@ -30,7 +29,7 @@ const Map = () => {
 
       useEffect(() => {
         mapEntrance();
-      }, []);
+      });
 
     return (
         <div className='map'>

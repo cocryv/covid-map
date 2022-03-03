@@ -1,18 +1,15 @@
-import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { GlobalContext } from '../shared/globalContext';
 import CountUp from 'react-countup';
 import Country from './Country';
 import { gsap } from 'gsap';
 import { Power4 } from 'gsap/gsap-core';
-import { selectOptions } from '@testing-library/user-event/dist/select-options';
-import Collapse from 'react-css-collapse';
 
 const Sidebar = () => {
 
     const [openCountryTab, setOpenCountryTab] = useState(false);
     const [selectedCountry, setSelectedCountry] = useState("");
-    const [moreDetailsOpen, setMoreDetailsOpen] = useState(false);
+    // const [moreDetailsOpen, setMoreDetailsOpen] = useState(false);
 
     const apiDatas = useContext(GlobalContext);
     const globalDatas = apiDatas.value[0];
